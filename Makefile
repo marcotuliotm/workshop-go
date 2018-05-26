@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-
+## Pra nao ter confilito com os nomes das pastas
 .PHONY: all tools clean goget env env-ip test do-test env-stop test do-cover cover build image help
 
 NAME    = workshop-go
@@ -9,7 +9,7 @@ GOTOOLS = \
 	golang.org/x/tools/cmd/cover
 
 all: build image
-
+## Comentario na linha do comando aparece no help
 tools: ## Instalar as ferramentas de cobertura e gestão de dependências
 	go get -u -v $(GOTOOLS)
 

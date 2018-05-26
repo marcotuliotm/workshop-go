@@ -2,16 +2,16 @@ package http
 
 import (
 	"net/http"
+	"workshop-go/domain/user"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ricardolonga/workshop-go/domain"
 )
 
 type handler struct {
-	userService domain.UserService
+	userService *user.Service
 }
 
-func NewHandler(userService domain.UserService) http.Handler {
+func NewHandler(userService *user.Service) http.Handler {
 	handler := &handler{
 		userService: userService,
 	}
@@ -26,6 +26,8 @@ func NewHandler(userService domain.UserService) http.Handler {
 
 	return router
 }
+
+// defer é um finally
 
 func (h *handler) recovery() gin.HandlerFunc {
 	return func(c *gin.Context) {

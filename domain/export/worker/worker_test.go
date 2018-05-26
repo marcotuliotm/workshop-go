@@ -7,7 +7,7 @@ import (
 
 	"time"
 
-	"github.com/ricardolonga/workshop-go/domain"
+	"workshop-go/domain"
 )
 
 func TestWorker_Do(t *testing.T) {
