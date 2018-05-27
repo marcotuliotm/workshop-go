@@ -1,6 +1,6 @@
 package user
 
-import "github.com/ricardolonga/workshop-go/domain"
+import "workshop-go/domain"
 
 // ServiceMock ...
 type ServiceMock struct {

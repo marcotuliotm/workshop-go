@@ -6,7 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ricardolonga/workshop-go/domain/user"
+	"workshop-go/domain/user"
+
 	"github.com/stretchr/testify/assert"
 )
 

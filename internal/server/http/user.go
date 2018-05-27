@@ -3,8 +3,9 @@ package http
 import (
 	"net/http"
 
+	"workshop-go/domain"
+
 	"github.com/gin-gonic/gin"
-	"github.com/ricardolonga/workshop-go/domain"
 )
 
 func (h *handler) postUser(c *gin.Context) {
@@ -19,5 +20,5 @@ func (h *handler) postUser(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusCreated, nil)
+	c.JSON(http.StatusCreated, user.ID)
 }

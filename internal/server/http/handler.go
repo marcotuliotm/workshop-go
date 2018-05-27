@@ -3,8 +3,9 @@ package http
 import (
 	"net/http"
 
+	"workshop-go/domain"
+
 	"github.com/gin-gonic/gin"
-	"github.com/ricardolonga/workshop-go/domain"
 )
 
 type handler struct {

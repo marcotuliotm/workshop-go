@@ -6,8 +6,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/ricardolonga/workshop-go/domain/user"
-	"github.com/ricardolonga/workshop-go/internal/server/http"
+	"workshop-go/domain/user"
+	"workshop-go/internal/server/http"
 )
 
 //func main() {

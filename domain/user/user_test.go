@@ -5,7 +5,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/ricardolonga/workshop-go/domain"
+	"workshop-go/domain"
+
 	"github.com/stretchr/testify/assert"
 )
 
